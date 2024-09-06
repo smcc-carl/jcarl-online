@@ -1,12 +1,1 @@
-[
-  {
-    "name": "Blog",
-    "description": "Blogging",
-    "modelId": "blog",
-    "path": "src",
-    "localization": false,
-    "type": "MD",
-    "createdBy": "user",
-    "isServerless": false
-  }
-]
+[]
