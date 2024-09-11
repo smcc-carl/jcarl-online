@@ -1,18 +1,21 @@
-// Get the visitor count element
-const visitorCountElement = document.getElementById('visitorCount');
-
-// Check if there's a stored visitor count
-let visitorCount = localStorage.getItem('visitorCount');
-
-// If no stored count, initialize it to 1
-if (!visitorCount) {
-    visitorCount = 1;
-    localStorage.setItem('visitorCount', visitorCount);
+window.openModal = function(modalId) {
+    document.getElementById(modalId).style.display = 'block'
+    document.getElementsByTagName('body')[0].classList.add('overflow-y-hidden')
 }
 
-// Update the visitor count element
-visitorCountElement.textContent = visitorCount;
+window.closeModal = function(modalId) {
+    document.getElementById(modalId).style.display = 'none'
+    document.getElementsByTagName('body')[0].classList.remove('overflow-y-hidden')
+}
 
-// Increment the visitor count for the next visit
-visitorCount++;
-localStorage.setItem('visitorCount', visitorCount);
+// Close all modals when press ESC
+document.onkeydown = function(event) {
+    event = event || window.event;
+    if (event.keyCode === 27) {
+        document.getElementsByTagName('body')[0].classList.remove('overflow-y-hidden')
+        let modals = document.getElementsByClassName('modal');
+        Array.prototype.slice.call(modals).forEach(i => {
+            i.style.display = 'none'
+        })
+    }
+};

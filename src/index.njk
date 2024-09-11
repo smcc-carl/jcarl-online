@@ -5,34 +5,79 @@
 
 <img src="./assets/bg.svg" alt="background" class="w-full absolute top-0 -z-10 h-[90vh] opacity-40">
 
-<section class='container pb-32' id="#project">
-    <div class="flex gap-8 items-center py-32">
+<section class='container text-zinc-800 py-32'>
+    <div class="grid grid-cols-2 items-center ">
+
         <div class="">
         
-        <p class="text-yellow-500 font-bold text-5xl leading-[4rem]">TIRED OF SLOW WEBSITE? <br> LET'S END THAT</p>
-        <p class="text-gray-400 text-xl py-12 pr-8 leading-[2rem]">Don''t let slow website cost you sales. Hi, <span class="font-bold text-yellow-500 mb-10"> I'm Carl</span> and I'm here to help you optimize your site for maximum performance and boost your online presence.</p>
-        <a href="#" class="bg-yellow-500 px-6 py-4 rounded-3xl font-semibold hover:bg-transparent hover:text-yellow-500 hover:border hover:border-yellow-500 transition easi-in-out duration-500">Book a Consultation now!</a>
+        <p class=" font-semibold text-5xl leading-2">TIRED OF SLOW WEBSITE? <br> LET'S END THAT!</p>
+        <p class=" text-xl py-12 pr-16 leading-[2rem]">Don''t let slow website cost you sales. Hi, <span class="font-bold text-zinc-900 mb-10"> I'm Carl</span> and I'm here to help you optimize your site for maximum performance and boost your online presence.</p>
+
+        
+
+        <button href="#" class="bg-gray-900 px-8 py-4 text-white rounded-full justify-self-center border border-gray-900 hover:border hover:border-gray-900 hover:text-gray-900 hover:bg-transparent hover:font-semibold transition ease-in-out duration-500" onclick="openModal('modelConfirm')">Book a consultation now!</button>
         </div>
 
+        <div id="modelConfirm" class="fixed hidden z-50 inset-0 bg-gray-900 bg-opacity-60 overflow-y-auto w-ful h-full px-4 ">
+            <div class="relative top-48 mx-auto shadow-xl rounded-xl bg-white max-w-[500px] ">
+        
+                <div class="flex justify-end p-2">
+                    <button onclick="closeModal('modelConfirm')" type="button"
+                        class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </div>
+        
+        
+                <div class="grid p-10">
+                
+                <div class="p-6 pt-0">
+                  <p class=" font-semibold text-3xl">Book for a free consultation now!</p>
+                        <form method="POST" action="https://script.google.com/macros/s/AKfycbwkwwuBcvCXbPwMK_8fOODUGsa4YpFcwhSfiFDBakjNZr4Ny3Hr8u-Z_gjzrGtLblXe/exec" class=" text-gray-500 grid gap-4 py-8" >
+                        <div class="grid">
+                        <label for="input">Full Name:</label>
+                        <input type="text" class="border border-gray-300 rounded-xl py-2 px-4">
+                        </div>
+                         
+                
+                        <div class="grid pb-8">
+                        <label for="input">Email:</label>
+                        <input type="text" class="border border-gray-300 rounded-xl  py-2 px-4">
+                        </div>
+                      <div>
+                         <button type="submit" class="bg-gray-800 px-8 py-4 border border-gray-800 rounded-full text-gray-200 left-">Book now!</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+        
+        
+            </div>
+        </div>
+
+        <video src="./assets/jc-online.webm" type="video/webm" poster="assets/JC.webp"  controls class=' rounded-3xl'></video>
 
 
-
-        <video src="./assets/jc-online.webm" type="video/webm" poster="assets/JC.webp"  controls class='w-[50%] rounded-3xl'></video>
+       
     </div>
 
-    <div class="flex justify-around">
-        <p class="flex gap-4 items-center font-semibold text-yellow-500"><img src="./assets/check.svg" alt="check" class="w-8 ">Web Development</p>
-        <p class="flex gap-4 items-center font-semibold text-yellow-500"><img src="./assets/check.svg" alt="check" class="w-8 ">UI/UX Design</p>
-        <p class="flex gap-4 items-center font-semibold text-yellow-500"><img src="./assets/check.svg" alt="check" class="w-8 ">SEO</p>
-        <p class="flex gap-4 items-center font-semibold text-yellow-500"><img src="./assets/check.svg" alt="check" class="w-8 ">Web Optimization</p>
-        <p class="flex gap-4 items-center font-semibold text-yellow-500"><img src="./assets/check.svg" alt="check" class="w-8 ">Social Media Marketing</p>
+    <div class="flex justify-around pt-32">
+        <p class="flex gap-4 items-center font-semibold "><img src="./assets/check.svg" alt="check" class="w-8 ">Web Development</p>
+        <p class="flex gap-4 items-center font-semibold "><img src="./assets/check.svg" alt="check" class="w-8 ">Web Optimization</p>
+        <p class="flex gap-4 items-center font-semibold "><img src="./assets/check.svg" alt="check" class="w-8 ">UI/UX Design</p>
+        <p class="flex gap-4 items-center font-semibold "><img src="./assets/check.svg" alt="check" class="w-8 ">SEO</p>
+        
+        <p class="flex gap-4 items-center font-semibold "><img src="./assets/check.svg" alt="check" class="w-8 ">Social Media Marketing</p>
     </div>
-    <p class="text-yellow-500 text-center font-bold pt-8">Total Visitors: <span id="visitorCount"></span></p>
 </section>
 
 
 
-<section class=" bg-zinc-900/50 text-gray-400 py-32 " id="projects">
+<section class=" bg-gray-200 text-gray-400 py-32 " id="projects">
     <p class="text-center text-yellow-500 text-5xl font-bold pb-16">PROJECTS</p>
 
  <div class="grid grid-cols-2 container gap-8">
@@ -76,7 +121,7 @@
 
 
 <section id="testimonials" class="bg-primary py-32 container">
-<p class="text-5xl text-yellow-500 font-bold text-center mb-32">OUR SATISFIED CLIENT</p>
+<p class="text-5xl text-yellow-500 font-bold text-center mb-32">OUR 100% SATISFIED CLIENT</p>
 
 <div class="grid grid-cols-2 gap-4">
     <div class=" text-gray-400 flex left-4 items-center">
