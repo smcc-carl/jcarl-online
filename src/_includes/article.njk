@@ -1,0 +1,21 @@
+---
+layout: 'base.njk'
+---
+
+<section class="px-[20%]">
+<div class="container py-16   ">
+
+  
+        <img class="rounded-3xl" src={{ image }} alt={{ img-alt }}>
+        <p class="pt-16 pb-4 text-5xl">{{title}}</p>
+        <p>{{author}}</p>
+</div>
+
+<div class="container py-10">
+
+ {{ content | safe }}
+
+</div>
+
+
+</section>
