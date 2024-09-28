@@ -15,7 +15,7 @@ The truth is, it may not be about your skills at all. Something else could be bl
 
 In this blog, we’ll uncover some common mistakes that, though simple, can have a huge impact on your portfolio’s performance. By the end, you’ll have actionable tips to fix these errors, boost your credibility, and get more clients.
 
-** 1. Too Much Focus on Design **
+# Too Much Focus on Design 
 Don’t get me wrong—having a beautifully designed portfolio is important. But here’s the thing: no matter how stunning your website looks, it won’t automatically translate into clients. Many developers fall into the trap of obsessing over their website's design, packing it with flashy animations, fancy typography, and complex layouts. It’s easy to think that a polished website will impress visitors enough to hire you. But what if I told you that focusing too much on the visuals can hurt your chances of attracting clients?
 
 Here’s the reality: Potential clients don’t care how sleek your portfolio is if it doesn’t communicate value. A flashy design can even be overwhelming or confusing. What matters more is how well your portfolio works, how clearly it communicates your skills, and how easy it is to navigate.
@@ -24,7 +24,7 @@ A minimalist design that highlights your strengths, projects, and services is fa
 
 Pro Tip: When designing your portfolio, always remember that "less is more." Keep the design clean, professional, and focused on providing essential information. Don’t just make it look good—make sure it works for you by driving client interest.
 
-2. Long Loading Time
+# Long Loading Time
 Have you ever heard of the “5-second rule” in web development? If not, now’s the time to learn. The 5-second rule refers to the crucial first few seconds when a visitor loads your site. During this time, your portfolio has to make a strong impression—because it’s make-or-break.
 
 Here’s the problem: If your website takes too long to load, you’ve already lost potential clients. In today's fast-paced world, time is everything, and clients won’t wait around for a slow site. You might be surprised how many portfolios suffer from slow loading times.
@@ -43,7 +43,7 @@ Speed and value go hand-in-hand. Even a lightning-fast website is useless if it 
 
 Pro Tip: Run performance checks on your site using tools like Google PageSpeed Insights or GTmetrix. These tools can help you optimize loading times and provide actionable insights for improvement.
 
-3. The Dead Hero Section
+# The Dead Hero Section
 The hero section—the first part of your portfolio that visitors see—is one of the most important elements. It’s your chance to hook clients immediately. But here’s the catch: many developers overlook the importance of the hero section’s content and rely solely on the visuals.
 
 If your hero section is visually appealing but lacks compelling content that communicates what you do, you’re at risk of losing clients. Visitors might think, “This looks nice, but what does this developer offer?” A visually dead or meaningless hero section is a missed opportunity.

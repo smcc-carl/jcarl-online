@@ -1,3 +1,28 @@
+const fname = document.getElementById('fname');
+const email = document.getElementById('email');
+const submit = document.getElementById('form-jc');
+
+
+
+submit.addEventListener('submit',(e) => {
+    e.preventDefault();
+    console.log("clicked");
+
+    // email.code
+    Email.send({
+        SecureToken : "af222074-d312-49b3-8e29-89fc531b213b",
+        To : 'carl.smcc24@gmail.com',
+        From : "carl.smcc24@gmail.com",
+        Subject : "Book now",
+        Body : "Testimg1233qwesdgfbesfidsfijnebsr8oudi"
+    }).then(
+      message => alert(message)
+    );
+});
+
+
+
+
 window.openModal = function(modalId) {
     document.getElementById(modalId).style.display = 'block'
     document.getElementsByTagName('body')[0].classList.add('overflow-y-hidden')
