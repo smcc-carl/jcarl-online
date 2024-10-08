@@ -14,7 +14,7 @@ submit.addEventListener('submit',(e) => {
         To : 'carl.smcc24@gmail.com',
         From : "carl.smcc24@gmail.com",
         Subject : "Book now",
-        Body : "Testimg1233qwesdgfbesfidsfijnebsr8oudi"
+        Body : ""
     }).then(
       message => alert(message)
     );
