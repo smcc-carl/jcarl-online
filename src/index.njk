@@ -231,7 +231,7 @@
 
     <div class="">
         <ul class="grid grid-cols-3 gap-8 w-full py-8" id="searchResults">
-            {% for articles in collections.articles %}
+            {% for articles in collections.articles | reverse%}
             {%-if loop.index0 < 3 -%}
               <li class="">
                 <img src="{{articles.data.image}}" alt="bg1" class="rounded-xl">
