@@ -8,3 +8,27 @@ body{
     font-family: 'Montserrat', sans-serif;
     background-color: #fff;
 }
+
+
+@layer base {
+    h1 {
+        @apply text-4xl font-semibold mb-6;
+    }
+    h2 {
+        @apply text-3xl font-semibold mb-4;
+    }
+    h3 {
+        @apply text-2xl font-medium mb-2;
+    }
+    blockquote {
+        @apply border-l-4 pl-4 italic text-gray-600 bg-gray-50 mb-4; /* Adjust styles as needed */
+    }
+    p {
+        @apply mb-4; /* Adds margin to paragraphs */
+    }
+    /* Line breaks (if you're using <br> tags) */
+    br {
+        @apply mb-2; /* Adds space below line breaks */
+    }
+}
+
