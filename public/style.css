@@ -697,6 +697,13 @@ br{
   /* Adds space below line breaks */
 }
 
+emp{
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246 / var(--tw-text-opacity));
+  /* Adds emphasis to text */
+}
+
 *, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;

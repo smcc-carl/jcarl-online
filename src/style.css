@@ -30,5 +30,8 @@ body{
     br {
         @apply mb-2; /* Adds space below line breaks */
     }
+    emp {
+        @apply text-blue-500 font-semibold; /* Adds emphasis to text */   
+    }
 }
 
