@@ -4,11 +4,14 @@ templateEngineOverride: njk, md
 ---
 
 <section class="px-[20%]">
-    <div class="container py-16 leading-loose text-gray-700">
-        <img class="rounded-3xl mb-6" src="{{ image }}" alt="{{ img-alt }}">
-               <p class="pt-16 text-4xl font-semibold">{{ title }}</p>
+    
+    <div class="container py-16  ">
+        <p class="py-8 text-gray-700 text-7xl text-center font-semibold">{{ title }}</p>
+        <img class="mb-6 max-w-[90%] mx-auto" src="{{ image }}" alt="{{ img-alt }}">
+            
     </div>
 
     <div class="text-gray-700 leading-loose">
         {{ content | safe }}
+    </div>
 </section>

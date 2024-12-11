@@ -1,7 +1,7 @@
 {
   "name": "jcarl-online",
   "version": "1.0.0",
-  "description": "My Portfolio Website",
+  "description": "JC-Creatives",
   "main": "index.js",
   "scripts": {
     "start": "npm-run-all -p dev:*",
