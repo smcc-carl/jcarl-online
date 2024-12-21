@@ -6,7 +6,7 @@ templateEngineOverride: njk, md
 <section class="px-[20%]">
     
     <div class="container py-16  ">
-        <p class="py-8 text-gray-700 text-7xl text-center font-semibold">{{ title }}</p>
+        <p class="py-8 text-new text-7xl text-center font-medium">{{ title }}</p>
         <img class="mb-6 max-w-[90%] mx-auto" src="{{ image }}" alt="{{ img-alt }}">
             
     </div>
@@ -14,4 +14,60 @@ templateEngineOverride: njk, md
     <div class="text-gray-700 leading-loose">
         {{ content | safe }}
     </div>
+    <form id="comment-form" class="mt-16 container py-16">
+        <h3 class="text-amber-600">Join the Discussion:</h3>
+        <div class="flex gap-8">
+        <input class="w-full pl-4 rounded-lg bg-gray-300 py-4 text-gray-700 font-light " type="text" name="name" placeholder="Name" required>
+        <input class="w-full pl-4 rounded-lg bg-gray-300 py-4 text-gray-700 font-light " type="email" name="email" placeholder="Email" required>
+        </div>
+        <textarea class="w-full mt-4 rounded-lg pl-4 py-4 bg-gray-300 text-gray-700 h-48 font-light" name="message" placeholder="Leave Your Message here" required></textarea>
+        <input type="hidden" name="postId" value="YOUR_POST_ID"> <button type="submit" class=" bg-amber-600 rounded-lg px-8 py-3 text-white mt-4">Send Message</button>
+    </form>
 </section>
+
+
+
+<script>
+    document.getElementById("commentForm").addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const formData = new FormData(e.target);
+    
+      const response = await fetch("/api/comments", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: formData.get("name"),
+          email: formData.get("email"),
+          message: formData.get("message"),
+        }),
+      });
+    
+      if (response.ok) {
+        alert("Comment added successfully!");
+        loadComments();
+      } else {
+        alert("Failed to add comment");
+      }
+    });
+    
+    async function loadComments() {
+      const response = await fetch("/api/comments", { method: "GET" });
+      const comments = await response.json();
+      const commentsList = document.getElementById("commentsList");
+    
+      commentsList.innerHTML = comments
+        .map(
+          (comment) => `
+            <div>
+              <p><strong>${comment.name}</strong> (${comment.email})</p>
+              <p>${comment.message}</p>
+              <p><small>${new Date(comment.created_at).toLocaleString()}</small></p>
+            </div>
+          `
+        )
+        .join("");
+    }
+    
+    loadComments();
+</script>
+    

@@ -11,6 +11,8 @@
     <title>YOU WON&#39;T BELEIVE THIS AGAIN - ANOTHER ADOBE APP KILLER</title>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CPFE2QELF4"></script>
+<script src="https://cdn.lordicon.com/lordicon.js"></script>
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -21,27 +23,39 @@
 
 </head>
 <body class="">
-    <main><header class="container py-4 items-center flex justify-between">
+    <main><header class="md:container  py-4 items-center flex justify-between">
     <a href="/" class="flex gap-4 items-center">
-        <img src="/assets/jc-logo.png" alt="jc-logo" class="w-16">
-<!-- <p class="font-bold text-3xl text-zinc-600">j<span class='text-zinc-900'>Creatives</span></p> -->
-
-</a>
-    <nav>
-        <ul class="flex gap-8 text-zinc-800 font-light ">
-            <li class=" cursor-pointer hover:text-indigo-600 transition ease-in-out duration-500"><a href="/" class="pointer">Home</a></li>
-            <li class="cursor-pointer hover:text-indigo-600 transition ease-in-out duration-500"><a href="/#expertise">Our Expertise</a></li>
-            <li class="cursor-pointer hover:text-indigo-600 transition ease-in-out duration-500"><a href="/#choose">Why Choose us</a></li>
-            <li class="cursor-pointer hover:text-indigo-600 transition ease-in-out duration-500"><a href="/#faq">FAQs</a></li>
-            <li class="cursor-pointer hover:text-indigo-600 transition ease-in-out duration-500"><a href="/#blog">Blog</a></li>
-            <li class="cursor-pointer hover:text-indigo-600 transition ease-in-out duration-500"><a href="#">About us</a></li>
+        <img src="/assets/jc-logo.png" alt="jc-logo" class="xl:w-16 md:w-12 w-10">      </a>                                                    
+    <nav class="">
+        <ul class="md:flex xl:gap-8 md:gap-4 text-new  hidden">
+            <li class=" cursor-pointer hover:text-amber-600 transition ease-in-out duration-500"><a href="/" class="pointer">Home</a></li>
+            <li class="cursor-pointer hover:text-amber-600 transition ease-in-out duration-500"><a href="/#expertise">Our Expertise</a></li>
+            <li class="cursor-pointer hover:text-amber-600 transition ease-in-out duration-500"><a href="/#choose">Why Choose us</a></li>
+            <li class="cursor-pointer hover:text-amber-600 transition ease-in-out duration-500"><a href="/#faq">FAQs</a></li>
+            <li class="cursor-pointer hover:text-amber-600 transition ease-in-out duration-500"><a href="/#blog">Blog</a></li>
+            <li class="cursor-pointer hover:text-amber-600 transition ease-in-out duration-500"><a href="#">About us</a></li>
         </ul>
+        <details class="list-none md:hidden">
+           <summary class="list-none"> <i class="fa-solid fa-bars text-2xl text-amber-600"></i></summary>
+           <ul class="menu menu-horizontal px-1">
+      <li><a>Link</a></li>
+      <li>
+        <details>
+          <summary>Parent</summary>
+          <ul class="bg-base-100 rounded-t-none p-2">
+            <li><a>Link 1</a></li>
+            <li><a>Link 2</a></li>
+          </ul>
+        </details>
+
     </nav>
+
+    
 </header>
 <section class="px-[20%]">
     
     <div class="container py-16  ">
-        <p class="py-8 text-gray-700 text-7xl text-center font-semibold">YOU WON&#39;T BELEIVE THIS AGAIN - ANOTHER ADOBE APP KILLER</p>
+        <p class="py-8 text-new text-7xl text-center font-medium">YOU WON&#39;T BELEIVE THIS AGAIN - ANOTHER ADOBE APP KILLER</p>
         <img class="mb-6 max-w-[90%] mx-auto" src="/assets/illustrator.webp" alt="NaN">
             
     </div>
@@ -83,8 +97,63 @@
 <p>Vectorpea is proving to be a worthy competitor to Adobe Illustrator, offering a free, browser-based solution packed with essential design features. For creatives who want professional-level tools without the financial burden of subscriptions, Vectorpea is an excellent alternative. Say goodbye to high costs and enjoy the freedom of a design platform that meets your creative needs while keeping your budget in check.</p>
 
     </div>
+    <form id="comment-form" class="mt-16 container py-16">
+        <h3 class="text-amber-600">Join the Discussion:</h3>
+        <div class="flex gap-8">
+        <input class="w-full pl-4 rounded-lg bg-gray-300 py-4 text-gray-700 font-light " type="text" name="name" placeholder="Name" required>
+        <input class="w-full pl-4 rounded-lg bg-gray-300 py-4 text-gray-700 font-light " type="email" name="email" placeholder="Email" required>
+        </div>
+        <textarea class="w-full mt-4 rounded-lg pl-4 py-4 bg-gray-300 text-gray-700 h-48 font-light" name="message" placeholder="Leave Your Message here" required></textarea>
+        <input type="hidden" name="postId" value="YOUR_POST_ID"> <button type="submit" class=" bg-amber-600 rounded-lg px-8 py-3 text-white mt-4">Send Message</button>
+    </form>
 </section>
-<footer class="bg-[#222]">
+
+
+
+<script>
+    document.getElementById("commentForm").addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const formData = new FormData(e.target);
+    
+      const response = await fetch("/api/comments", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: formData.get("name"),
+          email: formData.get("email"),
+          message: formData.get("message"),
+        }),
+      });
+    
+      if (response.ok) {
+        alert("Comment added successfully!");
+        loadComments();
+      } else {
+        alert("Failed to add comment");
+      }
+    });
+    
+    async function loadComments() {
+      const response = await fetch("/api/comments", { method: "GET" });
+      const comments = await response.json();
+      const commentsList = document.getElementById("commentsList");
+    
+      commentsList.innerHTML = comments
+        .map(
+          (comment) => `
+            <div>
+              <p><strong>${comment.name}</strong> (${comment.email})</p>
+              <p>${comment.message}</p>
+              <p><small>${new Date(comment.created_at).toLocaleString()}</small></p>
+            </div>
+          `
+        )
+        .join("");
+    }
+    
+    loadComments();
+</script>
+    <footer class="bg-[#222]">
 
    <!-- <div>
     <p class="text-center">Subscribe to our newsletter now!</p>

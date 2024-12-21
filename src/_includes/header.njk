@@ -1,17 +1,29 @@
-<header class="container py-4 items-center flex justify-between">
+<header class="md:container  py-4 items-center flex justify-between">
     <a href="/" class="flex gap-4 items-center">
-        <img src="/assets/jc-logo.png" alt="jc-logo" class="w-16">
-<!-- <p class="font-bold text-3xl text-zinc-600">j<span class='text-zinc-900'>Creatives</span></p> -->
-
-</a>
-    <nav>
-        <ul class="flex gap-8 text-zinc-800 font-light ">
-            <li class=" cursor-pointer hover:text-indigo-600 transition ease-in-out duration-500"><a href="/" class="pointer">Home</a></li>
-            <li class="cursor-pointer hover:text-indigo-600 transition ease-in-out duration-500"><a href="/#expertise">Our Expertise</a></li>
-            <li class="cursor-pointer hover:text-indigo-600 transition ease-in-out duration-500"><a href="/#choose">Why Choose us</a></li>
-            <li class="cursor-pointer hover:text-indigo-600 transition ease-in-out duration-500"><a href="/#faq">FAQs</a></li>
-            <li class="cursor-pointer hover:text-indigo-600 transition ease-in-out duration-500"><a href="/#blog">Blog</a></li>
-            <li class="cursor-pointer hover:text-indigo-600 transition ease-in-out duration-500"><a href="#">About us</a></li>
+        <img src="/assets/jc-logo.png" alt="jc-logo" class="xl:w-16 md:w-12 w-10">      </a>                                                    
+    <nav class="">
+        <ul class="md:flex xl:gap-8 md:gap-4 text-new  hidden">
+            <li class=" cursor-pointer hover:text-amber-600 transition ease-in-out duration-500"><a href="/" class="pointer">Home</a></li>
+            <li class="cursor-pointer hover:text-amber-600 transition ease-in-out duration-500"><a href="/#expertise">Our Expertise</a></li>
+            <li class="cursor-pointer hover:text-amber-600 transition ease-in-out duration-500"><a href="/#choose">Why Choose us</a></li>
+            <li class="cursor-pointer hover:text-amber-600 transition ease-in-out duration-500"><a href="/#faq">FAQs</a></li>
+            <li class="cursor-pointer hover:text-amber-600 transition ease-in-out duration-500"><a href="/#blog">Blog</a></li>
+            <li class="cursor-pointer hover:text-amber-600 transition ease-in-out duration-500"><a href="#">About us</a></li>
         </ul>
+        <details class="list-none md:hidden">
+           <summary class="list-none"> <i class="fa-solid fa-bars text-2xl text-amber-600"></i></summary>
+           <ul class="menu menu-horizontal px-1">
+      <li><a>Link</a></li>
+      <li>
+        <details>
+          <summary>Parent</summary>
+          <ul class="bg-base-100 rounded-t-none p-2">
+            <li><a>Link 1</a></li>
+            <li><a>Link 2</a></li>
+          </ul>
+        </details>
+
     </nav>
+
+    
 </header>

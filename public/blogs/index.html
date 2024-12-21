@@ -11,6 +11,8 @@
     <title>Articles</title>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CPFE2QELF4"></script>
+<script src="https://cdn.lordicon.com/lordicon.js"></script>
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -21,36 +23,48 @@
 
 </head>
 <body class="">
-    <main><header class="container py-4 items-center flex justify-between">
+    <main><header class="md:container  py-4 items-center flex justify-between">
     <a href="/" class="flex gap-4 items-center">
-        <img src="/assets/jc-logo.png" alt="jc-logo" class="w-16">
-<!-- <p class="font-bold text-3xl text-zinc-600">j<span class='text-zinc-900'>Creatives</span></p> -->
-
-</a>
-    <nav>
-        <ul class="flex gap-8 text-zinc-800 font-light ">
-            <li class=" cursor-pointer hover:text-indigo-600 transition ease-in-out duration-500"><a href="/" class="pointer">Home</a></li>
-            <li class="cursor-pointer hover:text-indigo-600 transition ease-in-out duration-500"><a href="/#expertise">Our Expertise</a></li>
-            <li class="cursor-pointer hover:text-indigo-600 transition ease-in-out duration-500"><a href="/#choose">Why Choose us</a></li>
-            <li class="cursor-pointer hover:text-indigo-600 transition ease-in-out duration-500"><a href="/#faq">FAQs</a></li>
-            <li class="cursor-pointer hover:text-indigo-600 transition ease-in-out duration-500"><a href="/#blog">Blog</a></li>
-            <li class="cursor-pointer hover:text-indigo-600 transition ease-in-out duration-500"><a href="#">About us</a></li>
+        <img src="/assets/jc-logo.png" alt="jc-logo" class="xl:w-16 md:w-12 w-10">      </a>                                                    
+    <nav class="">
+        <ul class="md:flex xl:gap-8 md:gap-4 text-new  hidden">
+            <li class=" cursor-pointer hover:text-amber-600 transition ease-in-out duration-500"><a href="/" class="pointer">Home</a></li>
+            <li class="cursor-pointer hover:text-amber-600 transition ease-in-out duration-500"><a href="/#expertise">Our Expertise</a></li>
+            <li class="cursor-pointer hover:text-amber-600 transition ease-in-out duration-500"><a href="/#choose">Why Choose us</a></li>
+            <li class="cursor-pointer hover:text-amber-600 transition ease-in-out duration-500"><a href="/#faq">FAQs</a></li>
+            <li class="cursor-pointer hover:text-amber-600 transition ease-in-out duration-500"><a href="/#blog">Blog</a></li>
+            <li class="cursor-pointer hover:text-amber-600 transition ease-in-out duration-500"><a href="#">About us</a></li>
         </ul>
+        <details class="list-none md:hidden">
+           <summary class="list-none"> <i class="fa-solid fa-bars text-2xl text-amber-600"></i></summary>
+           <ul class="menu menu-horizontal px-1">
+      <li><a>Link</a></li>
+      <li>
+        <details>
+          <summary>Parent</summary>
+          <ul class="bg-base-100 rounded-t-none p-2">
+            <li><a>Link 1</a></li>
+            <li><a>Link 2</a></li>
+          </ul>
+        </details>
+
     </nav>
+
+    
 </header>
 <section class="container pt-4 pb-16">
 <div class=" gap-16">
 
     <div class="px-16">
-        <ul class="grid grid-cols-3 gap-8 w-full py-8" id="searchResults">
+        <ul class="grid grid-cols-3 gap-8 w-full py-8 text-gray-700" id="searchResults">
             
            
               <li class="pt-16">
                 <img src="/assets/power.webp" alt="bg1" class="rounded-xl">
                 <div class="">
-                    <p class="text-2xl text-gray-800 pt-8 font-semibold">THE POWER HOURS - WHERE THE FUTURES ARE FORGE</p>
-                    <p class="pt-4 pb-6 text-gray-700">Discover how your 5-to-9 hours can unlock your future success with strategies to turn your evenings into powerful steps toward your dreams.</p>
-                    <a href="/articles/1-the-power-hours/" class=" bg-indigo-600 text-white px-8 py-3 rounded-3xl font-semibold hover:text-indigo-600 hover:bg-transparent border border-indigo-600 transition ease-in-out duration-500">Read more</a>
+                    <p class="text-xl text-new pt-8 font-medium">THE POWER HOURS - WHERE THE FUTURES ARE FORGE</p>
+                    <p class="pt-4 pb-6 text-gray-700 line-clamp-3">Discover how your 5-to-9 hours can unlock your future success with strategies to turn your evenings into powerful steps toward your dreams.</p>
+                    <a href="/articles/1-the-power-hours/" class=" bg-amber-600 text-white px-8 py-2 rounded-3xl font-light hover:text-amber-600 hover:bg-transparent border border-amber-600 transition ease-in-out duration-500">Read more</a>
                 </div>
               
               </li>
@@ -60,9 +74,9 @@
               <li class="pt-16">
                 <img src="/assets/illustrator.webp" alt="bg1" class="rounded-xl">
                 <div class="">
-                    <p class="text-2xl text-gray-800 pt-8 font-semibold">YOU WON&#39;T BELEIVE THIS AGAIN - ANOTHER ADOBE APP KILLER</p>
-                    <p class="pt-4 pb-6 text-gray-700">Discover a free, browser-based design tool that rivals Adobe Illustrator with pro-level vector editing, cross-platform compatibility, and a user-friendly interface—all without the hefty subscription fees.</p>
-                    <a href="/articles/another-adobe-app-killer/" class=" bg-indigo-600 text-white px-8 py-3 rounded-3xl font-semibold hover:text-indigo-600 hover:bg-transparent border border-indigo-600 transition ease-in-out duration-500">Read more</a>
+                    <p class="text-xl text-new pt-8 font-medium">YOU WON&#39;T BELEIVE THIS AGAIN - ANOTHER ADOBE APP KILLER</p>
+                    <p class="pt-4 pb-6 text-gray-700 line-clamp-3">Discover a free, browser-based design tool that rivals Adobe Illustrator with pro-level vector editing, cross-platform compatibility, and a user-friendly interface—all without the hefty subscription fees.</p>
+                    <a href="/articles/another-adobe-app-killer/" class=" bg-amber-600 text-white px-8 py-2 rounded-3xl font-light hover:text-amber-600 hover:bg-transparent border border-amber-600 transition ease-in-out duration-500">Read more</a>
                 </div>
               
               </li>
@@ -72,9 +86,9 @@
               <li class="pt-16">
                 <img src="/assets/canva.webp" alt="bg1" class="rounded-xl">
                 <div class="">
-                    <p class="text-2xl text-gray-800 pt-8 font-semibold">SAY GOODBYE TO CANVA&#39;S LIMIT. TRY THIS INSTEAD!</p>
-                    <p class="pt-4 pb-6 text-gray-700">Discover why this app is the go-to design tool for professionals, offering greater flexibility, control, and advanced features compared to Canva.</p>
-                    <a href="/articles/canva-best-alternatives-for-free/" class=" bg-indigo-600 text-white px-8 py-3 rounded-3xl font-semibold hover:text-indigo-600 hover:bg-transparent border border-indigo-600 transition ease-in-out duration-500">Read more</a>
+                    <p class="text-xl text-new pt-8 font-medium">SAY GOODBYE TO CANVA&#39;S LIMIT. TRY THIS INSTEAD!</p>
+                    <p class="pt-4 pb-6 text-gray-700 line-clamp-3">Discover why this app is the go-to design tool for professionals, offering greater flexibility, control, and advanced features compared to Canva.</p>
+                    <a href="/articles/canva-best-alternatives-for-free/" class=" bg-amber-600 text-white px-8 py-2 rounded-3xl font-light hover:text-amber-600 hover:bg-transparent border border-amber-600 transition ease-in-out duration-500">Read more</a>
                 </div>
               
               </li>
@@ -84,9 +98,9 @@
               <li class="pt-16">
                 <img src="/assets/hero.webp" alt="bg1" class="rounded-xl">
                 <div class="">
-                    <p class="text-2xl text-gray-800 pt-8 font-semibold">SECRETS OF EFFECTIVE HERO SECTION</p>
-                    <p class="pt-4 pb-6 text-gray-700">Uncover the essential key elements of an effective hero section that will attract potential clients to your thriving business.</p>
-                    <a href="/articles/how-to-have-an-effective-hero-section/" class=" bg-indigo-600 text-white px-8 py-3 rounded-3xl font-semibold hover:text-indigo-600 hover:bg-transparent border border-indigo-600 transition ease-in-out duration-500">Read more</a>
+                    <p class="text-xl text-new pt-8 font-medium">SECRETS OF EFFECTIVE HERO SECTION</p>
+                    <p class="pt-4 pb-6 text-gray-700 line-clamp-3">Uncover the essential key elements of an effective hero section that will attract potential clients to your thriving business.</p>
+                    <a href="/articles/how-to-have-an-effective-hero-section/" class=" bg-amber-600 text-white px-8 py-2 rounded-3xl font-light hover:text-amber-600 hover:bg-transparent border border-amber-600 transition ease-in-out duration-500">Read more</a>
                 </div>
               
               </li>
@@ -96,9 +110,9 @@
               <li class="pt-16">
                 <img src="/assets/youtube.webp" alt="bg1" class="rounded-xl">
                 <div class="">
-                    <p class="text-2xl text-gray-800 pt-8 font-semibold">IS YOUTUBE ALGORITHM BEATS GOOGLE?</p>
-                    <p class="pt-4 pb-6 text-gray-700">Discover how YouTube’s algorithm is outshining Google and learn why optimizing your YouTube presence can give your brand a unique advantage.</p>
-                    <a href="/articles/is-youtube-algorithm-works-better-than-google/" class=" bg-indigo-600 text-white px-8 py-3 rounded-3xl font-semibold hover:text-indigo-600 hover:bg-transparent border border-indigo-600 transition ease-in-out duration-500">Read more</a>
+                    <p class="text-xl text-new pt-8 font-medium">IS YOUTUBE ALGORITHM BEATS GOOGLE?</p>
+                    <p class="pt-4 pb-6 text-gray-700 line-clamp-3">Discover how YouTube’s algorithm is outshining Google and learn why optimizing your YouTube presence can give your brand a unique advantage.</p>
+                    <a href="/articles/is-youtube-algorithm-works-better-than-google/" class=" bg-amber-600 text-white px-8 py-2 rounded-3xl font-light hover:text-amber-600 hover:bg-transparent border border-amber-600 transition ease-in-out duration-500">Read more</a>
                 </div>
               
               </li>
@@ -108,9 +122,9 @@
               <li class="pt-16">
                 <img src="/assets/photopea.webp" alt="bg1" class="rounded-xl">
                 <div class="">
-                    <p class="text-2xl text-gray-800 pt-8 font-semibold">THIS APP IS LITERALLY A PHOTOSHOP KILLER</p>
-                    <p class="pt-4 pb-6 text-gray-700">See how a powerful design tool with pro-level features and a user-friendly interface can be the ideal solution to Photoshop’s complexity and high costs.</p>
-                    <a href="/articles/photoshop-best-alternative/" class=" bg-indigo-600 text-white px-8 py-3 rounded-3xl font-semibold hover:text-indigo-600 hover:bg-transparent border border-indigo-600 transition ease-in-out duration-500">Read more</a>
+                    <p class="text-xl text-new pt-8 font-medium">THIS APP IS LITERALLY A PHOTOSHOP KILLER</p>
+                    <p class="pt-4 pb-6 text-gray-700 line-clamp-3">See how a powerful design tool with pro-level features and a user-friendly interface can be the ideal solution to Photoshop’s complexity and high costs.</p>
+                    <a href="/articles/photoshop-best-alternative/" class=" bg-amber-600 text-white px-8 py-2 rounded-3xl font-light hover:text-amber-600 hover:bg-transparent border border-amber-600 transition ease-in-out duration-500">Read more</a>
                 </div>
               
               </li>
@@ -120,9 +134,9 @@
               <li class="pt-16">
                 <img src="/assets/hostinger.webp" alt="bg1" class="rounded-xl">
                 <div class="">
-                    <p class="text-2xl text-gray-800 pt-8 font-semibold">THE BEST WORDPRESS HOSTING FOR STARTUP</p>
-                    <p class="pt-4 pb-6 text-gray-700">Find the ideal hosting solution for startups launching WordPress websites, blending affordability, optimization, and outstanding support.</p>
-                    <a href="/articles/the-best-wp-hosting-for-startup/" class=" bg-indigo-600 text-white px-8 py-3 rounded-3xl font-semibold hover:text-indigo-600 hover:bg-transparent border border-indigo-600 transition ease-in-out duration-500">Read more</a>
+                    <p class="text-xl text-new pt-8 font-medium">THE BEST WORDPRESS HOSTING FOR STARTUP</p>
+                    <p class="pt-4 pb-6 text-gray-700 line-clamp-3">Find the ideal hosting solution for startups launching WordPress websites, blending affordability, optimization, and outstanding support.</p>
+                    <a href="/articles/the-best-wp-hosting-for-startup/" class=" bg-amber-600 text-white px-8 py-2 rounded-3xl font-light hover:text-amber-600 hover:bg-transparent border border-amber-600 transition ease-in-out duration-500">Read more</a>
                 </div>
               
               </li>
@@ -132,9 +146,9 @@
               <li class="pt-16">
                 <img src="/assets/leave.webp" alt="bg1" class="rounded-xl">
                 <div class="">
-                    <p class="text-2xl text-gray-800 pt-8 font-semibold">WHY CLIENT ALWAYS LEAVE MY WEBSITE?</p>
-                    <p class="pt-4 pb-6 text-gray-700">Discover the top three reasons why this happens and learn how to fix them. Improve your website&#39;s performance and keep visitors engaged.</p>
-                    <a href="/articles/why-client-leave-my-website/" class=" bg-indigo-600 text-white px-8 py-3 rounded-3xl font-semibold hover:text-indigo-600 hover:bg-transparent border border-indigo-600 transition ease-in-out duration-500">Read more</a>
+                    <p class="text-xl text-new pt-8 font-medium">WHY CLIENT ALWAYS LEAVE MY WEBSITE?</p>
+                    <p class="pt-4 pb-6 text-gray-700 line-clamp-3">Discover the top three reasons why this happens and learn how to fix them. Improve your website&#39;s performance and keep visitors engaged.</p>
+                    <a href="/articles/why-client-leave-my-website/" class=" bg-amber-600 text-white px-8 py-2 rounded-3xl font-light hover:text-amber-600 hover:bg-transparent border border-amber-600 transition ease-in-out duration-500">Read more</a>
                 </div>
               
               </li>

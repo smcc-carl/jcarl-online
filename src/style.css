@@ -38,3 +38,10 @@ body{
 .text-color{
     color: #2c2c2a;
 }
+
+.text-new{
+    color: #0B3041;
+}
+.bg-new{
+    background: #0B3041;
+}
