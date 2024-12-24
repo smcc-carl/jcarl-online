@@ -2287,10 +2287,6 @@ details.collapse summary::-webkit-details-marker{
   margin-bottom: 2rem;
 }
 
-.-ml-8{
-  margin-left: -2rem;
-}
-
 .-mt-4{
   margin-top: -1rem;
 }
@@ -2385,28 +2381,16 @@ details.collapse summary::-webkit-details-marker{
   max-width: 80rem;
 }
 
+.max-w-\[100\%\]{
+  max-width: 100%;
+}
+
 .max-w-\[90\%\]{
   max-width: 90%;
 }
 
 .max-w-lg{
   max-width: 32rem;
-}
-
-.max-w-\[\]{
-  max-width: ;
-}
-
-.max-w-\[100\%\]{
-  max-width: 100%;
-}
-
-.max-w-\[80\%\]{
-  max-width: 80%;
-}
-
-.max-w-\[10\%\]{
-  max-width: 10%;
 }
 
 .grow{
@@ -2427,14 +2411,6 @@ details.collapse summary::-webkit-details-marker{
 
 .grid-cols-3{
   grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.flex-row{
-  flex-direction: row;
-}
-
-.flex-row-reverse{
-  flex-direction: row-reverse;
 }
 
 .items-center{
@@ -2678,6 +2654,11 @@ details.collapse summary::-webkit-details-marker{
   padding-right: 2rem;
 }
 
+.px-\[10\%\]{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
 .px-\[20\%\]{
   padding-left: 20%;
   padding-right: 20%;
@@ -2716,16 +2697,6 @@ details.collapse summary::-webkit-details-marker{
 .py-8{
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.px-\[10\%\]{
-  padding-left: 10%;
-  padding-right: 10%;
-}
-
-.px-\[\]{
-  padding-left: ;
-  padding-right: ;
 }
 
 .pb-10{
@@ -2823,11 +2794,6 @@ details.collapse summary::-webkit-details-marker{
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-6xl{
-  font-size: 3.75rem;
-  line-height: 1;
 }
 
 .font-light{
@@ -3120,6 +3086,11 @@ body{
     padding-right: 3rem;
   }
 
+  .md\:px-8{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
   .md\:py-3{
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
@@ -3133,16 +3104,6 @@ body{
   .md\:py-52{
     padding-top: 13rem;
     padding-bottom: 13rem;
-  }
-
-  .md\:px-8{
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-
-  .md\:px-16{
-    padding-left: 4rem;
-    padding-right: 4rem;
   }
 
   .md\:pr-32{
@@ -3166,11 +3127,6 @@ body{
   .md\:text-4xl{
     font-size: 2.25rem;
     line-height: 2.5rem;
-  }
-
-  .md\:text-6xl{
-    font-size: 3.75rem;
-    line-height: 1;
   }
 
   .md\:text-7xl{
