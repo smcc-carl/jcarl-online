@@ -4,6 +4,7 @@ const submit = document.getElementById('form-jc');
 
 
 
+
 submit.addEventListener('submit',(e) => {
     e.preventDefault();
     console.log("clicked");

@@ -394,7 +394,7 @@
     <div class="">
         <ul class="grid md:grid-cols-3 md:gap-16 w-full py-8 px-8" id="searchResults">
             {% for articles in collections.articles %}
-            {%-if loop.index0 < 3 -%}
+            {%- if loop.index0 < 3 -%}
             <a href="{{articles.url}}">
               <li class="">
                 <img src="{{articles.data.image}}" alt="bg1" class="rounded-xl">
