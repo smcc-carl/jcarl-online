@@ -2116,10 +2116,6 @@ details.collapse summary::-webkit-details-marker{
   margin-bottom: 0.5rem;
 }
 
-.mb-4{
-  margin-bottom: 1rem;
-}
-
 .mb-6{
   margin-bottom: 1.5rem;
 }
@@ -2603,10 +2599,6 @@ details.collapse summary::-webkit-details-marker{
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.font-bold{
-  font-weight: 700;
 }
 
 .font-light{

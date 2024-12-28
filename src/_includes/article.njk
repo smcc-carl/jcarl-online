@@ -9,26 +9,3 @@
   </div>
 </section>
 
-<section class="bg-gray-200 px-[20%]">
-{% set relatedArticles = [] %}
-{% for article in collections.articles %}
-  {% if article.url != page.url and article.data.tags | intersect(page.tags) | length > 0 %}
-    {% set relatedArticles = relatedArticles.concat(article) %}
-  {% endif %}
-{% endfor %}
-
-<h2 class="text-xl font-bold mb-4">Related Articles</h2>
-<ul>
-  {% for article in relatedArticles | slice(0, 3) %}
-    <a href="{{ article.url }}">
-      <li class="mb-6">
-        <img src="{{ article.data.image }}" alt="{{ article.data.title }}" class="rounded-xl">
-        <div class="pt-4">
-          <p class="md:text-3xl text-lg font-medium line-clamp-2">{{ article.data.title }}</p>
-          <p class="pt-2 font-light text-gray-500 line-clamp-3">{{ article.data.desc }}</p>
-        </div>
-      </li>
-    </a>
-  {% endfor %}
-</ul>
-</section>

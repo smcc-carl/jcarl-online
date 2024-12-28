@@ -1,9 +1,6 @@
 import { injectSpeedInsights } from '@vercel/speed-insights';
  
 
-const fname = document.getElementById('fname');
-const email = document.getElementById('email');
-const submit = document.getElementById('form-jc');
 
 injectSpeedInsights();
 
@@ -55,15 +52,3 @@ document.onkeydown = function(event) {
 
 
 
-var form = document.getElementById('from-jc');
-form.addEventListener("submit", e => {
-    e.preventDefault();
-    fetch(form.action, {
-        method: 'POST',
-        body: new FormData(document.getElementById('from-jc')),
-    }). then(
-        response => response.json(),
-    ).then((html) => {
-        window.open('index.html', '_blank');
-    });
-});
