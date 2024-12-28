@@ -1,8 +1,11 @@
+import { injectSpeedInsights } from '@vercel/speed-insights';
+ 
+
 const fname = document.getElementById('fname');
 const email = document.getElementById('email');
 const submit = document.getElementById('form-jc');
 
-
+injectSpeedInsights();
 
 
 submit.addEventListener('submit',(e) => {

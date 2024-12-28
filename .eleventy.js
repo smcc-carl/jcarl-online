@@ -1,14 +1,9 @@
-import { injectSpeedInsights } from '@vercel/speed-insights';
- 
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const markdownItTocDoneRight = require("markdown-it-toc-done-right");
 
 // Helper function for intersection
 const intersect = (array1, array2) => array1.filter(value => array2.includes(value));
-
-
-injectSpeedInsights();
 
 module.exports = function (eleventyConfig) {
   // Copy static assets to the output directory
