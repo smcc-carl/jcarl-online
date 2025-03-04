@@ -8,7 +8,7 @@ const intersect = (array1, array2) => array1.filter(value => array2.includes(val
 module.exports = function (eleventyConfig) {
   // Copy static assets to the output directory
   eleventyConfig.addPassthroughCopy("./src/assets");
-  eleventyConfig.addPassthroughCopy("./src/main.js");
+  eleventyConfig.addPassthroughCopy("/main.js");
   eleventyConfig.addPassthroughCopy("./src/css");
   eleventyConfig.addPassthroughCopy("./src/webfonts");
 

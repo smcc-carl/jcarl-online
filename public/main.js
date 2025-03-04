@@ -24,31 +24,36 @@ submit.addEventListener('submit',(e) => {
 
 
 
+// Module
 window.openModal = function(modalId) {
-    document.getElementById(modalId).style.display = 'block'
-    document.getElementsByTagName('body')[0].classList.add('overflow-y-hidden')
-}
-
-window.closeModal = function(modalId) {
-    document.getElementById(modalId).style.display = 'none'
-    document.getElementsByTagName('body')[0].classList.remove('overflow-y-hidden')
-}
-
-// Close all modals when press ESC
-document.onkeydown = function(event) {
-    event = event || window.event;
-    if (event.keyCode === 27) {
-        document.getElementsByTagName('body')[0].classList.remove('overflow-y-hidden')
-        let modals = document.getElementsByClassName('modal');
-        Array.prototype.slice.call(modals).forEach(i => {
-            i.style.display = 'none'
-        })
+    let modal = document.getElementById(modalId);
+    if (modal) {
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+        document.body.classList.add('overflow-y-hidden');
     }
 };
 
+window.closeModal = function(modalId) {
+    let modal = document.getElementById(modalId);
+    if (modal) {
+        modal.classList.remove('flex');
+        modal.classList.add('hidden');
+        document.body.classList.remove('overflow-y-hidden');
+    }
+};
+
+// Close modal when ESC key is pressed
+document.addEventListener('keydown', function(event) {
+    if (event.key === "Escape") {
+        document.body.classList.remove('overflow-y-hidden');
+        document.querySelectorAll('.modal').forEach(modal => {
+            modal.classList.remove('flex');
+            modal.classList.add('hidden');
+        });
+    }
+});
 
 
 
-
-
-
+// FAQQ's Section

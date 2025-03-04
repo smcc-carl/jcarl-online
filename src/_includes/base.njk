@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/css/all.min.css">
     <link rel="stylesheet" href="/css/fontawesome.min.css">
-    <link rel="shortcut icon" href="/assets/jc-logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/assets/jccreatives_logo.png" type="image/x-icon">
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <title>{{ title }}</title>
 <!-- Google tag (gtag.js) -->
@@ -22,13 +22,13 @@
 </script>
 
 </head>
-<body class="">
+<body class="bg-gray-100">
     <main>
         {%- include 'header.njk' -%}
         {{ content | safe }}
         {%- include 'footer.njk' -%}
     </main>
-    <script src="../main.js"></script>
+    <script src="../main.js" defer></script>
     <script>
         window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
       </script>

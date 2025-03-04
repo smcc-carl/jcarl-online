@@ -1,10 +1,64 @@
-<section class="px-[20%]">
-  <div class="container py-16">
-      <p class="py-8 text-new text-7xl text-center font-medium">THE BEST WORDPRESS HOSTING FOR STARTUP</p>
-      <img class="mb-6 max-w-[90%] mx-auto" src="/assets/hostinger.webp" alt="NaN">
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/css/all.min.css">
+    <link rel="stylesheet" href="/css/fontawesome.min.css">
+    <link rel="shortcut icon" href="/assets/jccreatives_logo.png" type="image/x-icon">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <title>THE BEST WORDPRESS HOSTING FOR STARTUP</title>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CPFE2QELF4"></script>
+<script src="https://cdn.lordicon.com/lordicon.js"></script>
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CPFE2QELF4');
+</script>
+
+</head>
+<body class="bg-gray-100">
+    <main><header class="px-[5%] pt-4 pb-8 bg-gray-100 items-center flex justify-between ">
+    <a href="/" class="flex gap-4 items-center">
+        <img src="/assets/jccreatives_logo.png" alt="jc-logo" class="xl:w-16 md:w-12 w-10">      </a>                                                    
+    <nav class="">
+        <ul class="md:flex xl:gap-8 md:gap-4 text-new  hidden">
+            <li class=" cursor-pointer hover:text-amber-600 transition ease-in-out duration-500"><a href="/" class="pointer">Home</a></li>
+            <li class="cursor-pointer hover:text-amber-600 transition ease-in-out duration-500"><a href="/#expertise">Our Expertise</a></li>
+            <li class="cursor-pointer hover:text-amber-600 transition ease-in-out duration-500"><a href="/#choose">Why Choose us</a></li>
+            <li class="cursor-pointer hover:text-amber-600 transition ease-in-out duration-500"><a href="/#faq">FAQs</a></li>
+            <li class="cursor-pointer hover:text-amber-600 transition ease-in-out duration-500"><a href="/blogs">Blog</a></li>
+            <li class="cursor-pointer hover:text-amber-600 transition ease-in-out duration-500"><a href="#">About us</a></li>
+        </ul>
+        <details class="list-none md:hidden">
+           <summary class="list-none"> <i class="fa-solid fa-bars text-2xl text-amber-600"></i></summary>
+           <ul class="menu menu-horizontal px-1">
+      <li><a>Link</a></li>
+      <li>
+        <details>
+          <summary>Parent</summary>
+          <ul class="bg-base-100 rounded-t-none p-2">
+            <li><a>Link 1</a></li>
+            <li><a>Link 2</a></li>
+          </ul>
+        </details>
+
+    </nav>
+
+    
+</header><section class="px-[20%]">
+  <div class="container ">
+  
+      <img class="mb-6 rounded-3xl mx-auto" src="/assets/hostinger.webp" alt="NaN">
+      <p class="pt-10  text-slate-700 text-4xl font-bold">THE BEST WORDPRESS HOSTING FOR STARTUP</p>
   </div>
 
-  <div class="text-gray-700 leading-loose">
+  <div class="text-gray-700 leading-loose pt-4 pb-16">
       <p>When embarking on the journey of launching a WordPress website, especially as a startup, selecting the right hosting provider is paramount. The hosting platform you choose can significantly influence your site’s performance, security, and overall user experience. Among the myriad of options available, Hostinger has emerged as a standout choice for startups venturing into the world of WordPress. Known for its budget-friendly pricing, optimized features specifically tailored for WordPress, and exceptional customer support, Hostinger provides the ideal environment for entrepreneurs looking to establish a strong online presence. Let’s explore why Hostinger is the best hosting option for WordPress websites, particularly for startups.</p>
 <br>
 <br>
@@ -27,3 +81,70 @@
   </div>
 </section>
 
+<footer class="bg-gray-900 text-white">
+    <div class="pt-32 pb-16 px-[5%]">
+
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 text-center md:text-left">
+          <div>
+            <h4 class="text-lg font-semibold mb-2">Company</h4>
+            <ul class="text-gray-400 space-y-2">
+              <li><a href="#" class="hover:text-white transition">About Us</a></li>
+              <li><a href="#" class="hover:text-white transition">Our Work</a></li>
+              <li><a href="#" class="hover:text-white transition">Blog</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-2">Services</h4>
+            <ul class="text-gray-400 space-y-2">
+              <li><a href="/#"class="hover:text-white transition">Web Development</a></li>
+              <li><a href="/#" class="hover:text-white transition">SEO Optimization</a></li>
+              <li><a href="/#" class="hover:text-white transition">UI/UX Design</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-2">Support</h4>
+            <ul class="text-gray-400 space-y-2">
+              <li><a href="/#" class="hover:text-white transition">FAQs</a></li>
+              <li><a href="/#" class="hover:text-white transition">Contact Us</a></li>
+            </ul>
+          </div>
+    
+    
+          <div class="mx-auto ">
+            <!-- Call to Action Section -->
+            <div class=" mb-8">
+              <h2 class="text-3xl font-bold">Subscribe to our Newsletter</h2>
+              <p class="text-gray-400 mt-2">Elevate your brand with stunning web solutions that drive results. Start your journey today!</p>
+             
+            </div>
+            <form @submit.prevent="subscribe" class="flex items-center border border-gray-700 rounded-lg overflow-hidden">
+              <input
+                type="email"
+                v-model="email"
+                placeholder="you@domain.com"
+                class="flex-1 px-3 py-2 bg-gray-800 text-white outline-none"
+              />
+              <button type="submit" class="bg-amber-200 text-gray-900 font-medium px-4 py-2">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+       
+      </div>
+    
+    <div class="text-gray-700 px-[5%] bg-gray-950 py-6">
+      <p class="mt-4 md:mt-0">&copy; 2025 JC-Creatives. All Rights Reserved.</p>
+      <div class="">
+    
+      </div>
+    </div>
+    </footer></main>
+    <script src="../main.js" defer></script>
+    <script>
+        window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+      </script>
+      
+</body>
+</html>

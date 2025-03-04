@@ -3,19 +3,19 @@
  title: Articles
 ---
 
-<section class="container pt-4 pb-16">
-<div class=" gap-16">
+<section class="px-[5%] pt-4 pb-16">
+<div class="">
 
     <div class="px-16">
-        <ul class="grid grid-cols-3 gap-8 w-full py-8 text-gray-700" id="searchResults">
+        <ul class="grid grid-cols-3 gap-16 w-full  text-gray-700" id="searchResults">
             {% for articles in collections.articles %}
            
               <li class="pt-16">
-                <img src="{{articles.data.image}}" alt="bg1" class="rounded-xl">
+                <img src="{{articles.data.image}}" alt="bg1" class="rounded-3xl">
                 <div class="">
-                    <p class="text-xl text-new pt-8 font-medium">{{articles.data.title}}</p>
-                    <p class="pt-4 pb-6 text-gray-700 line-clamp-3">{{articles.data.desc}}</p>
-                    <a href="{{articles.url}}" class=" bg-amber-600 text-white px-8 py-2 rounded-3xl font-light hover:text-amber-600 hover:bg-transparent border border-amber-600 transition ease-in-out duration-500">Read more</a>
+                    <p class="text-3xl text-new pt-8 font-medium">{{articles.data.title}}</p>
+                    <p class=" pb-6 text-gray-700 line-clamp-3">{{articles.data.desc}}</p>
+                    <a href="{{articles.url}}" class=" bg-indigo-700 text-white px-8 py-3 rounded-sm font-light hover:text-indigo-700 hover:bg-transparent border border-indigo-700 transition ease-in-out duration-500">Read more</a>
                 </div>
               
               </li>
