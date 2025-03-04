@@ -258,7 +258,7 @@
     <a href="/blogs">Read all Articles</a>
   </div>
   <ul class="grid md:grid-cols-3 md:gap-16 w-full py-8 " id="searchResults">
-    {% for articles in collections.articles %}
+    {% for articles in collections.articles | reverse %}
     {%- if loop.index0 < 3 -%}
     <a href="{{articles.url}}">
       <li class="">
